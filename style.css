@@ -57,6 +57,7 @@ a{
 }
 img{
     flex-direction: row;
+    margin: 10px;
 }
 
 body{
