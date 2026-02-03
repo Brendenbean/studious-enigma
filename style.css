@@ -1,0 +1,65 @@
+.main{ width:400px;
+margin: 0 auto;};
+transition-container {
+    /* Set a fixed size for the container */
+    width: 400px;
+    height: 300px;
+    position: relative; /* Needed to position images inside */
+    margin: auto;
+    overflow: hidden; /* Hide any overflow */
+}
+
+.fade-img {
+    /* Position all images in the same spot */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Hide all images by default */
+    transition: opacity 1s ease-in-out; /* The CSS transition */
+}
+
+
+/* Class to make an image visible */
+.fade-img.active {
+    opacity: 1;
+}
+
+.top{
+    margin: 0; /* Remove default body margin */
+    font-family: sans-serif;
+}
+
+.sticky-header {
+  display:flex;
+  height:100px;
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    padding: 3px 5px; /* Space inside the header */
+   text-align: center;
+   justify-content: space-between;
+ 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+
+    /* The magic happens here */
+    position: sticky; /* Make the element sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure the header is above other content */
+ 
+}
+
+a{
+  text-align: center;
+  font-size:2vw;
+    margin: 5px;
+    color:aliceblue
+}
+img{
+    flex-direction: row;
+}
+
+body{
+    background-color: #F5F5DC;
+}
+
