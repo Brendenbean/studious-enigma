@@ -6,43 +6,16 @@ margin: 0 auto;};
    
 }
 
-.top{
-    margin: 0; /* Remove default body margin */
-    font-family: sans-serif;
-     position: sticky; /* Make the element sticky */
-    top: 1; /* Stick to the top of the viewport */
-    z-index: 1000; /* Ensure the header is above other content */
-      height:100px;
-    background-color: #333; /* Dark background */
-    color: white; /* White text */
-    padding: 3px 5px; /* Space inside the header */
-   text-align: center;
-   justify-content: space-around;
- 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-}
 
-.sticky-header {
-  display:flex;
 
-    /* The magic happens here */
+.test{
+    
+
+     /* The magic happens here */
     position: sticky; /* Make the element sticky */
-    top: 1; /* Stick to the top of the viewport */
+    top: 0; /* Stick to the top of the viewport */
     z-index: 1000; /* Ensure the header is above other content */
-
-  height:100px;
-    background-color: #333; /* Dark background */
-    color: white; /* White text */
-    padding: 3px 5px; /* Space inside the header */
-   text-align: center;
-   justify-content: space-around;
- 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-
- 
 }
-
-
 
 body{
     
@@ -67,9 +40,17 @@ p{
 }
 
 .beans{
-    border: 10px solid black;
+   border: 10px solid transparent;
+    border-image: linear-gradient(to right, #FFD700, #1DB954) 1;
 }
 nav{
     border: 10px solid transparent;
     border-image: linear-gradient(to right, #5f7d9a, #FF0436) 1;
+}
+
+
+
+.shaunat{width: 40px;position: sticky; top: 0;  z-index: 1000; }
+.shaunat:hover {
+  cursor: pointer;
 }
